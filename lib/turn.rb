@@ -7,8 +7,7 @@ def display_board(board)
 end
 
 def input_to_index(input)
-  input = input.to_i
-  input - 1
+  input.to_i - 1
 end
 
 def valid_move?(board, index)
@@ -17,8 +16,9 @@ def valid_move?(board, index)
     if value == "" || value == " " || value == nil
       true
     end
+  else
+    false
   end
-  false
 end
 
 def move(board, index, token='X')
