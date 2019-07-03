@@ -17,9 +17,8 @@ def valid_move?(board, index)
     if value == "" || value == " " || value == nil
       true
     end
-  else
-    false
   end
+  false
 end
 
 def move(board, index, token='X')
